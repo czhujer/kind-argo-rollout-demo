@@ -46,7 +46,7 @@ cilium_install () {
 }
 
 kind --version
-# kind create cluster --name "test-argo-rollout" --config="kind-config.yaml" --wait=20s
+kind create cluster --name "test-argo-rollout" --config="kind-config.yaml" --wait=20s
 
 kubectl taint nodes --all node-role.kubernetes.io/master- || true
 
