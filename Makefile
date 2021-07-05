@@ -10,6 +10,10 @@ kind-setdown:
 install-nginx-ingress:
 	kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
 
+.PHONY: run-shellspec
+run-shellspec:
+	 shellspec -o j -f d
+
 #.PHONY: kind-install-chart
 #kind-install-chart:
 
