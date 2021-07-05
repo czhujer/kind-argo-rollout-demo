@@ -22,6 +22,9 @@ Describe 'k8s ingress'
     The status should be failure
   End
 
+  # TODO: test for default backend
+  # curl -kL http://localhost/notfound
+
   Describe '-- test app --'
     It 'banana app in running (over ingress)'
       When call check_banana_app

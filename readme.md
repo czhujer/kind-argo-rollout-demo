@@ -14,3 +14,9 @@
 - https://github.com/argoproj/argo-rollouts/blob/master/docs/getting-started.md
 - https://github.com/argoproj/rollouts-demo
 
+## shellspec
+- https://github.com/shellspec/shellspec
+- https://github.com/shellspec/shellspec/blob/master/docs/references.md#matchers
+- https://github.com/shellspec/shellspec/blob/master/docs/references.md#modifiers
+
+
