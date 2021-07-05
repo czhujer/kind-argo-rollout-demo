@@ -6,6 +6,11 @@ kind-setup:
 kind-setdown:
 	kind delete cluster  --name "test-argo-rollout"
 
+.PHONY: install-argo-rollouts
+install-argo-rollouts:
+	kubectl create namespace argo-rollouts
+	kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+
 .PHONY: install-nginx-ingress
 install-nginx-ingress:
 	kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
@@ -13,9 +18,6 @@ install-nginx-ingress:
 .PHONY: run-shellspec
 run-shellspec:
 	 shellspec -o j -f d
-
-#.PHONY: kind-install-chart
-#kind-install-chart:
 
 #.PHONY: kind-run-integration-tests
 #kind-run-integration-tests:
