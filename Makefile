@@ -37,8 +37,8 @@ run-shellspec:
 #	pytest --disable-pytest-warnings \
 #	tests/integration/tests
 
-.PHONY: run-k6s-io
-run-k6s-io:
+.PHONY: run-k6-io
+run-k6-io:
 #	export MY_HOSTNAME="http://blue-green-preview.dev.argoproj.io/";
 	echo "$$MY_HOSTNAME"
 	docker run --name k6s-local --rm \

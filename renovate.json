@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "kubernetes": {
+    "fileMatch": ["^kind/.*\\.yaml$", "k8s/.*\\.yaml$"]
+  },
+  "argocd": {
+    "fileMatch": ["argocd/.+\\.yaml$"]
+  }
+}

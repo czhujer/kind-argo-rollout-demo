@@ -1,1 +1,4 @@
 /report/results_junit.xml
+# Ignore DevSpace cache and log folder
+.devspace/
+/.idea/
